@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>FsharpToolbox.Pkg.DomainPrimitives</RootNamespace>
+
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Embedded</DebugType>
+    <EmbedAllSources>True</EmbedAllSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Strings/Validators.fs" />
+    <Compile Include="Strings/Strings.fs" />
+    <Compile Include="Strings/Guid.fs" />
+    <Compile Include="Numbers/Validators.fs" />
+    <Compile Include="Numbers/Numbers.fs" />
+    <Compile Include="Objects/Price.fs" />
+    <Compile Include="Dates/Validators.fs" />
+    <Compile Include="DateTimes/Validators.fs" />
+    <Compile Include="Dates/Dates.fs" />
+    <Compile Include="DateTimes/DateTimes.fs" />
+    <Compile Include="DateTimes/Instant.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NodaTime" Version="2.4.7" />
+    <PackageReference Include="FsharpToolbox.Pkg.FpUtils" Version="1.0.0" />
+    <PackageReference Include="FsharpToolbox.Pkg.Logging" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+    <GenerateProgramFile>false</GenerateProgramFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NodaTime" Version="2.4.7" />
+    <PackageReference Include="NodaTime.Testing" Version="2.4.7" />
+    <PackageReference Include="nunit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    <PackageReference Include="FsharpToolbox.Pkg.TestUtils" Version="0.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../FsharpToolbox.Pkg.DomainPrimitives/FsharpToolbox.Pkg.DomainPrimitives.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="ExtendedQualifierTest.fs" />
+    <Compile Include="Util.fs" />
+    <Compile Include="EmailTest.fs" />
+    <Compile Include="PersonNameTests.fs" />
+    <Compile Include="GuidTest.fs" />
+    <Compile Include="Dates.fs" />
+    <Compile Include="NumberValidations.fs" />
+    <Compile Include="NumberTypes.fs" />
+    <Compile Include="DateTimes.fs" />
+    <Compile Include="LanguageTest.fs" />
+    <Compile Include="Price.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>
